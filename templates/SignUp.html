@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<body>
+    <form action="." method="POST">
+        {% csrf_token %}
+        <h1>SignUp Page</h1>
+        <h5>Username: <input name="username" type="text" placeholder="Name here"></h5>
+        <h5>Password: <input name="password" type="password" placeholder="Password"></h5>
+        <h5>Designation: <input type="radio" name="designation" value="NGO"/> NGO
+            <input type="radio" name="designation" value="Restaurant"/>Restaurant</h5>
+        <button type="submit">Submit</button>
+        <p>Have an account? <a href="Login">Login</a> quickly</p>
+    </form>
+</body>
+</html>
